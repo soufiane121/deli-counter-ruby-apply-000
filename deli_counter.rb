@@ -12,10 +12,12 @@ def line(array)
   end
 end
 
+ticket_number = 0
 
-def take_a_number(katz_deli, new_person)
-  katz_deli << new_person
-  puts "Welcome, #{new_person}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli)
+ticket_number+=1
+katz_deli << ticket_number
+  puts "Welcome, You are have ticket number #{ticket_number}."
 end
 
 def now_serving(katz_deli)
